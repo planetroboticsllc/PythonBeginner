@@ -49,7 +49,7 @@ class photoApp(ctk.CTk):
         self.imageFrame.grid_columnconfigure(0, weight=1)
 
         self.editor = imageEditor()
-        self.editor.setImageFile("./resources/kate.jpg")
+        self.editor.setImageFile("./resources/matrix-4.jpg")
         picture = ctk.CTkImage(self.editor.getImage(), size=self.editor.getImageSize((800, 600)))
         self.imageLabel = ctk.CTkLabel(self.imageFrame, text="", image=picture)
         self.imageLabel.grid(row=0, column=0, sticky="nsew", padx=10, pady=20)

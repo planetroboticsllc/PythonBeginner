@@ -80,6 +80,7 @@ if __name__ == "__main__":
         enhancer = ImageEnhance.Sharpness(edit)
         edit = enhancer.enhance(factor)
 
-        ImageEnhance.Brightness
+        brighten = ImageEnhance.Brightness(edit)
+        edit = brighten.enhance(1.1)
 
         edit.save(editedPath + filename)
