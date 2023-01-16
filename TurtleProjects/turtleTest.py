@@ -33,14 +33,14 @@ def flower(angle = 135):
 
 
 
-flower(150)
+flower(140)
 
 penup()
 home()
 goto(-100,0)
 pendown()
 
-multigon(sides=20, length=25)
+multigon(sides=6)
 
 done()
 
